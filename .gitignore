@@ -3,5 +3,5 @@
 *$py.class
 .env
 *pycache*
-venv
+.venv
 *.log
