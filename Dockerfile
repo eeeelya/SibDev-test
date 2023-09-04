@@ -6,6 +6,7 @@ WORKDIR /app
 ENV PYTHONUNBUFFERED=1 \
     PYTHONPATH="."
 
-RUN pip install pipenv
-RUN pipenv install --system --deploy
+RUN pip install pipenv \
+    && pipenv install --system --ignore-pipfile --dev
 
+ENTRYPOINT ["/app/entrypoint.sh"]
