@@ -1,5 +1,5 @@
 from django.core.validators import FileExtensionValidator
-from deal_handler.models import Deal
+from deal_handler.models import User
 from rest_framework import serializers
 
 
@@ -14,5 +14,5 @@ class FileSerializer(serializers.Serializer):
 
 class DealSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Deal
+        model = User
         fields = "__all__"
