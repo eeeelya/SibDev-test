@@ -11,3 +11,8 @@ Run docker container:
 
     sudo docker-compose up
 
+### Usage
+
+Swagger docs:
+    
+    http://0.0.0.0:8000/swagger
